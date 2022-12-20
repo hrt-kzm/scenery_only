@@ -6,8 +6,8 @@ class Picture < ApplicationRecord
 
   has_one_attached :scene_image
 
-  validates :title, presence:true
-  validates :location, presence:true
+  validates :title, presence: true
+  validates :location, presence: true
   validates :produce, length: { maximum: 200 }
 
   def liked_by?(user)
